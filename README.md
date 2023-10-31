@@ -5,15 +5,15 @@
 ## Etape 0
 ### Arborescence du projet
 ai-nlp-servers
-	├── LICENSE
-	├── README.md
-	├── .gitignore
-	└── apps
-		├── back
-		├── front
-			├── demo
-			└── annotation
-		└── notebooks
+	- LICENSE
+	- README.md
+	- .gitignore
+	- apps
+		- back
+		- front
+			- demo
+			- annotation
+		- notebooks
 
 ### Choix techniques
 J'ai choisi d'utiliser les technologies suivantes:
