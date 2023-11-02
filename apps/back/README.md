@@ -30,3 +30,8 @@
 ### Clean it
 - poetry add black --group dev --> Formatteur de code python
 - poetry run black back --> Check que tous les fichiers python sont correctement formatés
+
+## Container
+### Image
+- Base Python 3.11 sur Alipne3.18 pour la taille (3.11.6-alpine3.18). On précise les numéros de version pour avoir une image très précise
+- RQ: On pourrait vouloir se créer une image python avec Poetry commune aux différents serveurs du projet, pour plus d'efficacité. A voir comment partager une image de base sans la publier dans le hub docker, par exemple dans le répertoire Apps/images
