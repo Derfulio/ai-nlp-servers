@@ -30,7 +30,6 @@ jobs:
         pip install poetry
         if [ -f pyproject.toml ]; then poetry install; fi
         poetry add flake8 pytest
-        cache: 'poetry' # caching poetry dependencies
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
