@@ -38,7 +38,7 @@ RUN poetry install --only main  # respects
 COPY . $CONTAINER_HOME
 
 # venv already has runtime deps installed we get a quicker install
-RUN poetry install
+# RUN poetry install
 
 CMD ["uvicorn", "back.main:app", "--host", "0.0.0.0", "--port", "80"]
 # If you are running your container behind a TLS Termination Proxy (load balancer) like Nginx or Traefik,
