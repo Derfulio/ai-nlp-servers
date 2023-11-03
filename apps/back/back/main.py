@@ -2,7 +2,12 @@ from typing import Union
 
 from fastapi import FastAPI
 
-app = FastAPI(title="NLP Server Back", summary="Derfulio's favorite app. Nuff said.", version="0.2.1")
+app = FastAPI(
+    title="NLP Server Back",
+    summary="Derfulio's favorite app. Nuff said.",
+    version="0.2.1",
+)
+
 
 @app.get("/")
 async def read_root():
