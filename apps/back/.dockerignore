@@ -1,0 +1,9 @@
+.idea
+containers.md
+Dockerfile
+poetry.lock
+__pycache__
+back/__pycache__
+.pytest_cache
+back/.pytest_cache
+tests
