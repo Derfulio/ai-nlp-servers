@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "back"
-version = "0.2.0"
+version = "0.3.0"
 description = ""
 authors = ["Derfulio <36664091+Derfulio@users.noreply.github.com>"]
 readme = "README.md"
@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.11"
 fastapi = "^0.104.1"
 uvicorn = {extras = ["standard"], version = "^0.23.2"}
-spacy = {extras = ["cuda12x", "lookups", "transformers"], version = "^3.7.2"}
+spacy = {extras = ["lookups", "transformers"], version = "^3.7.2"}
 fr-core-news-sm = {url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl"}
 fr-core-news-md = {url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.7.0/fr_core_news_md-3.7.0-py3-none-any.whl"}
 fr-core-news-lg = {url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_lg-3.7.0/fr_core_news_lg-3.7.0-py3-none-any.whl"}
