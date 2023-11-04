@@ -14,7 +14,7 @@
 ***https://fastapi.tiangolo.com/#run-it***
 - ```poetry shell``` --> Activation de l'environnement virtuel
 - ```cd back``` --> on va dans le répertoire du serveur
-- ```uvicorn main:app —-reload``` --> on active le serveur
+- ```uvicorn main:app --reload``` --> on active le serveur
 
 ### Test it
 ***https://fastapi.tiangolo.com/tutorial/testing/***
@@ -48,3 +48,8 @@
 - Clicker sur http://127.0.0.1:8000/health 
 - JSON attendu: {"statut":"Serveur OK"}
 - API disponible ici: http://localhost:8000/docs
+
+## Spacy Integration
+Ce serveur va utiliser Spacy pour orchestrer les workflows d'analyse NLP.
+Inspiré de l'exemple d'intégration de projects/integrations/fastapi que l'on peut trouver sur le GitHub d'Explosion: https://github.com/explosion/projects/tree/v3/integrations/fastapi.
+
