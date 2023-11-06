@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  clean:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -28,6 +28,11 @@ jobs:
     - name: List envs before clean
       run: |
         for file in /home/runner/.cache/pypoetry/virtualenvs/*; do
+          echo "$(basename "$file")"
+        done
+    - name: List files in directory
+      run: |
+        for file in ./*; do
           echo "$(basename "$file")"
         done
     - name: Clean virtual environment
