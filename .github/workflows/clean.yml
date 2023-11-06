@@ -1,0 +1,43 @@
+# Pour nettoyer les dépendances du runner
+name: Clean runner
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./apps/back
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.11"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install poetry
+    - name: List envs before clean
+      run: |
+        for file in /home/runner/.cache/pypoetry/virtualenvs/*; do
+          echo "$(basename "$file")"
+        done
+    - name: Clean virtual environment
+      run: |
+        poetry env remove /home/runner/.cache/pypoetry/virtualenvs/back-Fw-HNHGN-py3.11/
+        poetry env remove --all
+        rm -f /home/runner/.cache/pypoetry/virtualenvs/back-Fw-HNHGN-py3.11/
+        rm -f ./poetry.lock
+    - name: List envs after clean
+      run: |
+        for file in /home/runner/.cache/pypoetry/virtualenvs/*; do
+          echo "$(basename "$file")"
+        done
