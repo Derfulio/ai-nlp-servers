@@ -31,6 +31,7 @@ jobs:
         # Remove all the files of the current environment of the folder we are in
         POETRY_LOCATION=`poetry env info -p` 
         echo "Poetry is $POETRY_LOCATION"
+        poetry env remove $POETRY_LOCATION
         rm -rf "$POETRY_LOCATION"
         if [ -f pyproject.toml ]; then poetry install; fi
         poetry add flake8 pytest
