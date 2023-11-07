@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "spacy-projects"
+version = "0.1.0"
+description = ""
+authors = ["Derfulio <36664091+Derfulio@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "ner_demo_expand"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+spacy = {extras = ["lookups", "transformers"], version = "^3.7.2"}
+spacy-streamlit = "^1.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
