@@ -5,6 +5,7 @@
 ## Poetry usefull commands
 
 - ```poetry new back``` --> Crée le dossier du projet
+- ```poetry install``` --> installe les packages dans la VM du projet (rq: se positionner dans le repo du projet pour que cela fonctionne.)
 
 ### Create it
 ***https://fastapi.tiangolo.com/#create-it***
