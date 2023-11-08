@@ -5,7 +5,7 @@ spacy_version: ">=3.0.6,<4.0.0"
 vars:
   name: "ner_demo_expand"
   lang: "fr"
-  pipeline: "fr-core-news-lg"
+  pipeline: "fr_core_news_lg"
   train: "train.json"
   dev: "dev.json"
   version: "0.0.0"
@@ -99,7 +99,7 @@ commands:
   - name: visualize-model
     help: Visualize the model's output interactively using Streamlit
     script:
-      - "streamlit run scripts/visualize_model.py training/model-best \"I saw Shaka Khan in London. I like horses.\""
+      - "streamlit run scripts/visualize_model.py training/model-best \"J'ai vu Shaka Khan à Londres. J'aime les chevaux.\""
     deps:
       - "scripts/visualize_model.py"
       - "training/model-best"

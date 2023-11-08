@@ -1,0 +1,94 @@
+[
+  [
+    "Où se trouve Berlin ?",
+    {
+      "entities":[
+        [
+          13,
+          19,
+          "LOC"
+        ]
+      ]
+    }
+  ],
+  [
+    "J'aime bien Shaka Khan ?",
+    {
+      "entities":[
+        [
+          12,
+          22,
+          "PER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Les chevaux sont trop grands et ils font semblant de se soucier de vos sentiments.",
+    {
+      "entities":[
+        [
+          4,
+          11,
+          "ANIMAL"
+        ]
+      ]
+    }
+  ],
+  [
+    "Est-ce qu'ils mordent ?",
+    {
+      "entities":[
+
+      ]
+    }
+  ],
+  [
+    "les chevaux sont trop grands et ils font semblant de se soucier de vos sentiments.",
+    {
+      "entities":[
+        [
+          4,
+          11,
+          "ANIMAL"
+        ]
+      ]
+    }
+  ],
+  [
+    "les chevaux font semblant de se soucier de tes sentiments",
+    {
+      "entities":[
+        [
+          4,
+          11,
+          "ANIMAL"
+        ]
+      ]
+    }
+  ],
+  [
+    "ils font semblant de se soucier de tes sentiments, ces chevaux",
+    {
+      "entities":[
+        [
+          55,
+          62,
+          "ANIMAL"
+        ]
+      ]
+    }
+  ],
+  [
+    "des chevaux?",
+    {
+      "entities":[
+        [
+          4,
+          11,
+          "ANIMAL"
+        ]
+      ]
+    }
+  ]
+]

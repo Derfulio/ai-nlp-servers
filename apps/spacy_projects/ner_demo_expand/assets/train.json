@@ -1,0 +1,99 @@
+[
+  [
+    "Qui est Shaka Khan ?",
+    {
+      "entities":[
+        [
+          8,
+          18,
+          "PER"
+        ]
+      ]
+    }
+  ],
+  [
+    "J'aime Londres et Berlin.",
+    {
+      "entities":[
+        [
+          7,
+          14,
+          "LOC"
+        ],
+        [
+          18,
+          24,
+          "LOC"
+        ]
+      ]
+    }
+  ],
+  [
+    "Les chevaux sont trop grands et ils font semblant de se soucier de vos sentiments.",
+    {
+      "entities":[
+        [
+          4,
+          11,
+          "ANIMAL"
+        ]
+      ]
+    }
+  ],
+  [
+    "Est-ce qu'ils mordent ?",
+    {
+      "entities":[
+
+      ]
+    }
+  ],
+  [
+    "les chevaux sont trop grands et ils font semblant de se soucier de vos sentiments.",
+    {
+      "entities":[
+        [
+          4,
+          11,
+          "ANIMAL"
+        ]
+      ]
+    }
+  ],
+  [
+    "les chevaux font semblant de se soucier de tes sentiments",
+    {
+      "entities":[
+        [
+          4,
+          11,
+          "ANIMAL"
+        ]
+      ]
+    }
+  ],
+  [
+    "ils font semblant de se soucier de tes sentiments, ces chevaux",
+    {
+      "entities":[
+        [
+          55,
+          62,
+          "ANIMAL"
+        ]
+      ]
+    }
+  ],
+  [
+    "des chevaux?",
+    {
+      "entities":[
+        [
+          4,
+          11,
+          "ANIMAL"
+        ]
+      ]
+    }
+  ]
+]
